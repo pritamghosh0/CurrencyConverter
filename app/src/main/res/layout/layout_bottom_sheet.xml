@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="@dimen/dp_240"
+    android:orientation="vertical"
+    android:background="@drawable/bottomsheet_back"
+    android:padding="@dimen/padding_regular">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/padding_xsmall"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_xsmall"
+        app:cardBackgroundColor="@color/gray_0"
+        app:strokeWidth="@dimen/dp_0"
+        app:cardCornerRadius="@dimen/padding_xsmall"
+        android:elevation="@dimen/dp_0"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="search"
+        android:background="@drawable/text_input_back"
+        android:hint="@string/search_currency"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_0"
+        android:textSize="@dimen/text_14sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="@dimen/padding_regular"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_currencies"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:layout_marginVertical="@dimen/padding_small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="@dimen/dp_240"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/no_data_found"
+        android:id="@+id/tv_noData"
+        android:visibility="gone"/>
+</LinearLayout>

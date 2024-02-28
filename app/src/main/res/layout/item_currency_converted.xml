@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_88"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/padding_xsmall"
+    android:background="@drawable/border_back"
+    android:padding="@dimen/padding_xsmall">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp"
+        android:fontFamily="@font/roboto_regular"
+        android:id="@+id/tv_amount"
+        android:gravity="top|start"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:id="@+id/tv_currency"
+        android:maxLines="1"
+        android:layout_gravity="bottom"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="money_logo">Money Logo</string>
+    <string name="error_occurred">Error occurred !! Please try after sometime</string>
+    <string name="network_unavailable">Network unavailable!!</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="arrow">arrow</string>
+    <string name="spinner">Spinner</string>
+    <string name="search_currency">Search for a currency</string>
+    <string name="no_data_found">No data found</string>
+    <string name="fetched_latest_rates">Fetched latest rates</string>
+</resources>
